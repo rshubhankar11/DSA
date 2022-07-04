@@ -1,5 +1,3 @@
-import java.lang.reflect.Method;
-
 /**
  * SmallestElementOfArray
  * In this program we will find the smallest element of an array
@@ -26,6 +24,32 @@ import java.lang.reflect.Method;
  * d = combine(b, c) // f2(n)
  * return(d)
  * }
+ * 
+ * Time Complexity of Divide and Conquer Algorithm:
+ * 
+ * T(n) = aT(n/b) + f(n),
+ * 
+ * where,
+ * n = size of input
+ * a = number of subproblems in the recursion
+ * n/b = size of each subproblem. All subproblems are assumed to have the same
+ * size.
+ * f(n) = cost of the work done outside the recursive call, which includes the
+ * cost of dividing the problem and cost of merging the solutions
+ * 
+ * Advantages of Divide and Conquer Algorithm:
+ *
+ * 1.The difficult problem can be solved easily.
+ * 2.It divides the entire problem into subproblems thus it can be solved
+ * 3.parallelly ensuring multiprocessing
+ * 4.Efficiently uses cache memory without occupying much space
+ * 5.Reduces time complexity of the problem
+ *
+ * Disadvantages of Divide and Conquer Algorithm:
+ *
+ * 1. It involves recursion which is sometimes slow
+ * 2. Efficiency depends on the implementation of logic
+ * 3.It may crash the system if the recursion is performed rigorously
  */
 public class SmallestElementOfArray {
 
